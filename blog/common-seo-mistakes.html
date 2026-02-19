@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Common SEO mistakes: keyword stuffing, thin content, duplicate content, and other pitfalls that hurt rankings.">
   <title>Common SEO Mistakes to Avoid | SEO Case Studies Blog</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <style>
+:root{--bg:#0f1419;--bg-card:#1a2332;--text:#e6edf3;--text-muted:#8b9cb3;--accent:#f59e0b;--accent-soft:rgba(245,158,11,0.15);--border:#2d3a4d;--font-head:'Outfit',system-ui,sans-serif;--font-body:'Source Sans 3',system-ui,sans-serif;--radius:10px}*{box-sizing:border-box}body{margin:0;font-family:var(--font-body);font-size:1.05rem;line-height:1.65;color:var(--text);background:var(--bg)}h1,h2,h3{font-family:var(--font-head);font-weight:600}a{color:var(--accent);text-decoration:none}.container{max-width:1100px;margin:0 auto;padding:0 1.25rem}.site-header{background:var(--bg-card);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}.site-header .container{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 0}.logo{font-family:var(--font-head);font-weight:700;color:var(--text)}.logo span{color:var(--accent)}.nav-main{display:flex;gap:.5rem;flex-wrap:wrap}.nav-main a{color:var(--text-muted);padding:.5rem .75rem;border-radius:var(--radius)}.nav-main a[aria-current="page"]{color:var(--text);background:var(--bg-card)}.search-wrap input{padding:.5rem .75rem;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);color:var(--text)}.case-study-header{padding:2rem 0 1.5rem;border-bottom:1px solid var(--border)}.case-study-content{padding:2rem 0}.case-study-content section{margin-bottom:2.5rem}.case-study-content ul{padding-left:1.5rem}.summary-box{background:var(--accent-soft);border-left:4px solid var(--accent);padding:1.25rem 1.5rem;margin:2rem 0}.card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin:1rem 0}.grid-2{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem}.site-footer{margin-top:4rem;padding:2rem 0;border-top:1px solid var(--border);background:var(--bg-card)}.site-footer a{color:var(--text-muted)}
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -118,6 +120,8 @@
       </nav>
     </div>
   </footer>
-  <script src="../js/main.js"></script>
+  <script>
+var s=document.getElementById('header-search');if(s){s.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();var q=(this.value&&this.value.trim()||'').toLowerCase();if(!q)return;var d=(window.location.pathname||'').split('/').filter(Boolean).length-1;var p=d>0?Array(d+1).join('../'):'';var u=d>0?'../blog/index.html':p+'blog/index.html';if(q.indexOf('nykaa')!==-1)u=d>0?'../case-studies/nykaa.html':p+'case-studies/nykaa.html';else if(q.indexOf('amazon')!==-1)u=d>0?'../case-studies/amazon.html':p+'case-studies/amazon.html';else if(q.indexOf('flipkart')!==-1)u=d>0?'../case-studies/flipkart.html':p+'case-studies/flipkart.html';else if(q.indexOf('keyword')!==-1)u=d>0?'../keyword-research.html':p+'keyword-research.html';else if(q.indexOf('competitor')!==-1)u=d>0?'../competitor-analysis.html':p+'competitor-analysis.html';window.location.href=(d>0?u:p+u)+'?q='+encodeURIComponent(q);}});}
+  </script>
 </body>
 </html>
